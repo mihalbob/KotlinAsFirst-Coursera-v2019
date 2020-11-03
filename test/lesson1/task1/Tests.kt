@@ -92,6 +92,16 @@ class Tests {
     }
 
     @Test
+    fun tryPow() {
+        assertEquals(8.0, tryPow(2.0, 3.0))
+    }
+
+    @Test
+    fun tryIntToDouble() {
+        assertEquals(9.0, tryIntToDouble(9))
+    }
+
+    @Test
     @Tag("Easy")
     fun accountInThreeYears() {
         assertEquals(133.1, accountInThreeYears(100, 10), 1e-2)
